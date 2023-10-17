@@ -1,0 +1,25 @@
+.active{
+    position: relative;
+    padding-bottom: 5px;
+    color: #58e09c;
+}
+.active::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #d01616;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+@media only screen and (max-width: 380px) {
+    .active{
+        padding-bottom: 0px;
+    }
+    .active::after{
+        top: 100%;
+        left: 70%;
+    }
+  }
