@@ -7,6 +7,9 @@ import {
 import "./index.css";
 import Root from "./assets/Components/root/Root";
 import Home from "./assets/Components/Home/Home";
+import Services from "./assets/Components/Services/Services";
+import About from "./assets/Components/About/About";
+import Contact from "./assets/Components/Contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -19,11 +22,11 @@ const router = createBrowserRouter([
       },
       {
         path:"/about",
-        element:<div>hello</div>,
+        element:<About></About>,
       },
       {
         path:"/services",
-        element:<div>hello</div>,
+        element:<Services></Services>,
       },
       {
         path:"/portfolio",
@@ -35,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/contact",
-        element:<div>hello</div>,
+        element:<Contact></Contact>,
       },
     ]
   },
